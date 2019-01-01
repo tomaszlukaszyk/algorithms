@@ -7,7 +7,7 @@ public class TinkerTailor {
 
     public List<Integer> getResultSequence(int n, int k) {
         List<Integer> result = new ArrayList<Integer>();
-        List<Integer> ordered = getOrderedSequance(n);
+        List<Integer> ordered = getOrderedSequence(n);
         int currentIndex = 0;
 
         while (ordered.size() > 0) {
@@ -27,7 +27,7 @@ public class TinkerTailor {
         return result;
     }
 
-    private List<Integer> getOrderedSequance(int n) {
+    private List<Integer> getOrderedSequence(int n) {
         List<Integer> ordered = new ArrayList<Integer>();
 
         for (int i=1; i<=n; i++) {

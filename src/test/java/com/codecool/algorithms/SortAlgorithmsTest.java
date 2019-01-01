@@ -42,4 +42,13 @@ class SortAlgorithmsTest {
             assertEquals(arraySorted[i], arrayToSort[i]);
         }
     }
+
+    @Test
+    void testMergeSort() {
+        int[] actual = MergeSort.getSorted(arrayToSort);
+
+        for (int i=0; i<arraySorted.length; i++) {
+            assertEquals(arraySorted[i], actual[i]);
+        }
+    }
 }

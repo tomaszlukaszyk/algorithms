@@ -33,4 +33,13 @@ class SortAlgorithmsTest {
             assertEquals(arraySorted[i], arrayToSort[i]);
         }
     }
+
+    @Test
+    void testInsertionSort() {
+        InsertionSort.sort(arrayToSort);
+
+        for (int i=0; i<arraySorted.length; i++) {
+            assertEquals(arraySorted[i], arrayToSort[i]);
+        }
+    }
 }

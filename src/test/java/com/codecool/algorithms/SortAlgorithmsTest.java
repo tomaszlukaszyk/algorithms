@@ -24,4 +24,13 @@ class SortAlgorithmsTest {
             assertEquals(arraySorted[i], arrayToSort[i]);
         }
     }
+
+    @Test
+    void testBubbleSort() {
+        BubbleSort.sort(arrayToSort);
+
+        for (int i=0; i<arraySorted.length; i++) {
+            assertEquals(arraySorted[i], arrayToSort[i]);
+        }
+    }
 }

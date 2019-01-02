@@ -7,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SortAlgorithmsTest {
 
-    int[] arrayToSort;
-    int[] arraySorted;
+    private int[] arrayToSort;
+    private int[] arraySorted;
 
     @BeforeEach
     void init() {
@@ -49,6 +49,15 @@ class SortAlgorithmsTest {
 
         for (int i=0; i<arraySorted.length; i++) {
             assertEquals(arraySorted[i], actual[i]);
+        }
+    }
+
+    @Test
+    void testQuickSort() {
+        QuickSort.sort(arrayToSort, 0, arrayToSort.length - 1);
+
+        for (int i=0; i<arraySorted.length; i++) {
+            assertEquals(arraySorted[i], arrayToSort[i]);
         }
     }
 }
